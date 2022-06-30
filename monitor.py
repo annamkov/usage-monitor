@@ -2,8 +2,9 @@ import psutil
 import time
 
 #\r (carriage return) resets the cursor position to the beginning of the line,
-# which makes future print statement periodically overwrite the previous contents.
-# end = "" sets the last character of print to be an empty string instead of the default \n.
+# which makes print statements periodically overwrite previous output.
+
+# end="" sets the last character of print to be an empty string instead of the default \n.
 # this keeps the output occuring on the same line
 
 def show_usage(cpu_usage, bars=50):
